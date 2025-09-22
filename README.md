@@ -3,13 +3,49 @@
 - 初始化git仓库
 git init
 - 连接远程仓库
-git remote add <name> <remote_url>
+git remote add <remote_branch_name> <remote_url>
 git remote add origin https://github.com/HHH120604/HHH120604.git
 - 克隆远程仓库
 git clone <remote_url>
 git clone https://github.com/HHH120604/HHH120604.git
+- 查看远程仓库
+git remote -V
+- 修改远程仓库连接
+git remote set-url <remote_branch_name> <remote_url>
+
+## 分支管理
 - 查看分支
-git branch -a
+git branch [-a]
+> 查看本地分支或`-a`查看包括远程的所有分支
+- 创建分支
+git branch <branch_name>
+git branch hhh1206
+- 切换分支
+git switch <branch_name>
+git checkout <branch_name>
+git checkout hhh1206
+- 创建并切换分支
+git switch -c <branch_name>
+git checkout -b <branch_name>
+- 删除分支
+git branch [-d|D] <branch_name>
+> `d`安全删除或`D`强制删除
+- 合并分支
+git merge <branch_name>
+> 将`branch_name`的分支合并到当前分支
+
+## 状态管理
+- 查看状态
+git status
+- 添加/暂存修改
+git add [.|file_name|...]
+> `.`暂存所有更改
+- 提交更改
+git commit [-m||<message>]
+
+
+
+
 - 克隆该项目：`git clone https://github.com/HHH120604/SmartHome.git`
 - 查看分支：`git branch -a`
 - 创建并切换分支：`git checkout -b <分支名称>`
