@@ -32,6 +32,7 @@ git merge <branch_name>
 > 将`branch_name`的分支合并到当前分支
 
 ## 状态管理
+- add something
 - 查看状态<br>
 git status
 - 添加/暂存修改<br>
